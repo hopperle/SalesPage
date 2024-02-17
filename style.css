@@ -342,6 +342,50 @@ body{
 }
 /*==Produkte-Ende========================================*/
 
+/*==Produkt-Vorstellung-Anfang========================================*/
+.video-section {
+    padding: 0 16px
+}
+
+.video-container {
+    max-width: 900px;
+    height: 300px;
+    margin: 50px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: white
+}
+
+.video-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+/*==Produkt-Vorstellung-Ende========================================*/
+
 /*==Footer-Anfang========================================*/
 footer{
     background-color: #1b1b1f;
