@@ -90,7 +90,7 @@ body{
 /*==Header===========================================*/
 #header{
     height: 750px;
-    background-image: url(Material/NicolasCage_Hintergrund.png);
+    background-image: url(../Material/NicolasCage_Hintergrund.webp);
     background-size: cover;
     background-position: -500px;
     display: flex;
@@ -346,11 +346,10 @@ body{
 .video-section {
     padding: 0 16px
 }
-
 .video-container {
     max-width: 900px;
     height: 300px;
-    margin: 50px auto;
+    margin: 0 auto 90px;
     border-radius: 20px;
     overflow: hidden;
     display: flex;
@@ -361,7 +360,6 @@ body{
     text-align: center;
     color: white
 }
-
 .video-background {
     width: 100%;
     height: 100%;
@@ -373,7 +371,6 @@ body{
     z-index: -1;
     background-color: rgba(0, 0, 0, 0.5);
 }
-
 .video {
     width: 100%;
     height: 100%;
@@ -460,10 +457,13 @@ footer{
 
 /*==Responsive-Anfang====================================*/
 
-/*Iphone-Anfang*/
+/*Mobile-S-Anfang*/
 
 /*Navbar-Anfang*/
-@media (max-width: 390px) {
+@media (max-width: 320px) and (max-height: 858px) {
+body {
+    overflow-x: hidden;
+}
 .navigation {
     flex-direction: column;
     align-items: center;
@@ -513,11 +513,174 @@ footer{
     line-height: 1.2;
 }
 .text-box {
-    margin-left: -35px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     font-size: 0.5rem;
-    width: 120%;
+    width: 100%;
+    max-width: 320px;
     height: 470px;
+    overflow-y: auto;
+}
+.ctn {
+    margin-top: -20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+}
+/*Header-Ende*/
+
+/*SearchBanner-Anfang*/
+#search-banner {
+    margin-top: -50px;
+    height: 180px;
+    width: 90%;
+    margin-bottom: -20px;
+}
+.search-banner-text {
+    font-size: 1rem;
+    margin-left: 25px;
+    max-width: 88%;
+}
+.search-banner-text h1 {
+    margin-top: -1px;
+    font-size: 1.2rem;
+    line-height: 20px;
+}
+.search-box {
+    margin-top: 10px;
+    margin-left: -12px;
+}
+.search-box i {
+    font-size: 1rem;
+}
+.search-box .search-button {
+    height: 40px;
+    font-size: 1rem;
+}
+/*SearchBanner-Ende*/
+
+/*Produkte-Anfang*/    
+.produkte-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    max-width: 200px;
+    margin: 0 auto;
+    align-items: center;
+}
+.produkte-heading {
+    margin-left: 10px; 
+    margin-top: -25px; 
+    margin-bottom: 20px; 
+}
+.produkte-heading span {
+    margin-right: 10px; 
+}
+.produkte-box {
+    width: 100%;
+    border: 1px solid #eeeeee;
+    background-color: #ffffff;
+    padding: 15px; 
+    border-radius: 15px; 
+}
+.produkte-box img {
+    height: 150px; 
+    margin: 10px auto; 
+}
+.produkte-box strong {
+    font-size: 1rem; 
+    margin-top: 8px; 
+}
+.produkte-box .anzahl,
+.produkte-box .preis {
+    font-size: 0.8rem; 
+}
+.produkte-box .einkaufskorb-button {
+    height: 30px; 
+    margin-top: 15px; 
+}
+/*Produkte-Ende*/
+
+/*Footer-Anfang*/
+.footer-container {
+    flex-direction: column;
+    align-items: center;
+}
+.footer-logo,
+.footer-links {
+    max-width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+/*Footer-Ende*/
+}
+/*Mobile-S-Ende*/
+
+/*Mobile-M-Anfang*/
+
+@media (max-width: 375px) and (max-height: 858px) {
+body {
+    overflow-x: hidden;
+}
+.navigation {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.menu {
+    margin-top: 20px;
+}
+.logo {
+    margin-bottom: 20px;
+    font-size: 1.5rem; 
+}
+.right-nav {
+    margin-top: 20px;
+}
+.right-nav a {
+    width: 35px;
+    height: 35px;
+}
+.right-nav .like span {
+    width: 18px;
+    height: 18px;
+    font-size: 0.5rem;
+}
+/*Navbar-Ende*/
+
+/*Header-Anfang*/
+#header {
+    height: 600px;
+    background-position: left;
+}
+.header-content {
+    margin-top: -120px;
+    margin-left: -10px;
+    text-align: center;
+    scale: 68%;
+}
+.header-content h1 {
+    margin-top: 5px;
+    font-size: 5rem;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+.header-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+.text-box {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 0.5rem;
+    width: 100%;
+    max-width: 375px;
+    height: 470px;
+    overflow-y: auto;
 }
 .ctn {
     margin-top: -20px;
@@ -611,18 +774,175 @@ footer{
     text-align: center;
     margin-top: 10px;
 }
+/*Footer-Ende*/
+}
+/*Mobile-M-Ende*/
+
+/*Mobile-L-Anfang*/
+
+@media (max-width: 425px) and (max-height: 858px) {
+/* Navbar-Anfang */
+.navigation {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.menu {
+    margin-top: 20px;
+}
+.logo {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+.right-nav {
+    margin-top: 20px;
+}
+.right-nav a {
+    width: 35px;
+    height: 35px;
+}
+.right-nav .like span {
+    width: 18px;
+    height: 18px;
+    font-size: 0.5rem;
+}
+/* Navbar-Ende */
+
+/* Header-Anfang */
+#header {
+    height: 600px;
+    background-position: left;
+}
+.header-content {
+    margin-top: -120px;
+    margin-left: -10px;
+    text-align: center;
+    scale: 68%;
+}
+.header-content h1 {
+    margin-top: 5px;
+    font-size: 5rem;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+.header-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+.text-box {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 0.5rem;
+    width: 100%;
+    max-width: 425px;
+    height: 470px;
+    overflow-y: auto;
+}
+.ctn {
+    margin-top: -20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+}
+/* Header-Ende */
+
+/* SearchBanner-Anfang */
+#search-banner {
+    margin-top: -50px;
+    height: 180px;
+    width: 90%;
+    margin-bottom: -20px;
+}
+.search-banner-text {
+    font-size: 1rem;
+    margin-left: 25px;
+    max-width: 88%;
+}
+.search-banner-text h1 {
+    margin-top: -1px;
+    font-size: 1.2rem;
+    line-height: 20px;
+}
+.search-box {
+    margin-top: 10px;
+    margin-left: -12px;
+}
+.search-box i {
+    font-size: 1rem;
+}
+.search-box .search-button {
+    height: 40px;
+    font-size: 1rem;
+}
+/* SearchBanner-Ende */
+
+/* Produkte-Anfang */
+.produkte-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
+    max-width: 425px;
+    margin: 0 auto;
+    align-items: center;
+}
+.produkte-heading {
+    margin-left: 10px;
+    margin-top: -25px;
+    margin-bottom: 20px;
+}
+.produkte-heading span {
+    margin-right: 10px;
+}
+.produkte-box {
+    width: 100%;
+    border: 1px solid #eeeeee;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 15px;
+}
+.produkte-box img {
+    height: 150px;
+    margin: 10px auto;
+}
+.produkte-box strong {
+    font-size: 1rem;
+    margin-top: 8px;
+}
+.produkte-box .anzahl,
+.produkte-box .preis {
+    font-size: 0.8rem;
+}
+.produkte-box .einkaufskorb-button {
+    height: 30px;
+    margin-top: 15px;
+}
+/* Produkte-Ende */
+
+/* Footer-Anfang */
+.footer-container {
+    flex-direction: column;
+    align-items: center;
+}
+.footer-logo,
+.footer-links {
+    max-width: 100%;
+    text-align: center;
+    margin-top: 10px;
 }
 /*Footer-Ende*/
-
-/*Iphone-Ende*/
+}
+/*Mobile-L-Ende*/
 
 /*Tablet-Anfang*/
 
-@media (min-width: 768px) and (max-width: 858px) {
-/*Header-Anfang*/    
+@media (min-width: 768px) and (max-width: 1024px) {
+/* Header-Anfang */
 #header {
     height: 680px;
-    background-position: left;
+    background-position: 70% 0;
 }
 .header-content {
     margin-top: 25px;
@@ -647,10 +967,10 @@ footer{
     font-size: 1rem;
     width: 70%;
     height: auto;
-    padding: 20px;
+    padding: 10px;
 }
 .ctn {
-    text-align: center;
+    text-align: center;   
     font-size: 1rem;
 }
 /*Header-Ende*/
@@ -688,8 +1008,8 @@ footer{
 /*Produkte-Anfang*/
 .produkte-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
     max-width: 500px;
     margin: 0 auto;
     align-items: center;
@@ -725,25 +1045,142 @@ footer{
     height: 30px;
     margin-top: 15px;
 }
-}
 /*Produkte-Ende*/
-
+}
 /*Tablet-Ende*/
 
 /*Laptop-Anfang*/
 @media (min-width: 1024px) and (max-width: 1280px) {
-
+/*==Navigation===========================================*/
+.navigation {
+    padding: 20px;
+    max-width: 900px;
 }
+.menu li a {
+    padding: 3px 8px;
+    margin: 0px 10px;
+}
+.logo {
+    font-size: 1.2rem;
+}
+.right-nav a {
+    width: 35px;
+    height: 35px;
+}
+/*==Navigation-Ende=======================================*/
 
+/*==Header===========================================*/
+#header {
+    height: 600px;
+    background-position: 65% 0;
+}
+.header-content {
+    margin-top: 20px;
+    margin-left: 10px;
+    text-align: left;
+    scale: 70%;
+}
+.header-content h1 {
+    margin-top: 5px;
+    font-size: 5rem;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+.header-content h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+.text-box {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-size: 0.5rem;
+    width: 100%;
+    max-width: 708px;
+    height: 300px;
+}
+.ctn {
+    margin-top: -20px;
+    text-align: center;
+    flex-direction: column;
+    font-size: 1rem;
+}
+/*==Header-Ende=======================================*/
 
+/*==Search-Banner======================================*/
+#search-banner {
+    max-width: 1100px;
+    height: 400px;
+    margin: 0 auto 50px;
+    margin-top: -20px;
+    margin-bottom: 90px;
+}
+.search-banner-text {
+    width: 400px; 
+    margin-left: 50px;
+}
+/*==Search-Banner-Ende=================================*/
 
+/*==Produkte=============================================*/
+#produkte {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+.produkte-heading h2{
+    font-size: 1.4rem
+}
+.produkte-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    max-width: 800px;
+    margin: 0 auto;
+    align-items: center;
+}
+.produkte-box img {
+    height: 150px;
+}
+.produkte-box strong {
+    font-size: 1rem;
+}
+.produkte-box .preis {
+    font-size: 1.2rem;
+}
+.produkte-box .einkaufskorb-button {
+    height: 35px;
+    margin-top: 10px;
+}
+/*==Produkte-Ende=======================================*/
 
+/*==Produkt-Vorstellung========================================*/
+.video-container {
+    max-width: 800px;
+    height: 250px;
+    margin-bottom: 50px;
+}
+/*==Produkt-Vorstellung-Ende====================================*/
 
-
-
-
-
-
+/*==Footer========================================*/
+footer {
+    padding: 30px 20px;
+}
+.footer-container {
+    max-width: 1000px;
+    margin: 20px auto;
+}
+.footer-logo a {
+    font-size: 1.2rem;
+}
+.footer-social a {
+    width: 35px;
+    height: 35px;
+}
+.footer-links ul li a {
+    font-size: 0.8rem;
+}
+/*==Footer-Ende====================================*/
+}
+/*Laptop-Ende*/
 
 /*==Responsive-Ende=======================================*/
-
